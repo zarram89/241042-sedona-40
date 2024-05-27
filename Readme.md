@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Рамиль Зарипов](https://up.htmlacademy.ru/htmlcss/40/user/241042).
-* Наставник: `Неизвестно`.
+- Студент: [Рамиль Зарипов](https://up.htmlacademy.ru/htmlcss/40/user/241042).
+- Наставник: [Евгения Подопригора](https://htmlacademy.ru/profile/id2387199).
 
 ---
 
