@@ -2,6 +2,7 @@
 
 - Студент: [Рамиль Зарипов](https://up.htmlacademy.ru/htmlcss/40/user/241042).
 - Наставник: [Евгения Подопригора](https://htmlacademy.ru/profile/id2387199).
+- Сайт: [Мой проект Седона](https://zarram89.github.io/241042-sedona-40/).
 
 ---
 
