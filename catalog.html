@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <!-- Fix bug with deploy -->
     <div class="body-container">
       <header class="page-header" data-test="header">
         <nav class="navigation">
@@ -47,7 +46,7 @@
       <main class="main-container main-inner" data-test="main">
         <div class="inner-container">
         <!-- Header and breadcrumbs -->
-          <section class="inner-header">
+          <header class="inner-header">
             <div class="inner-header-container">
               <h1 class="inner-header-title">Гостиницы Седоны</h1>
               <ol class="breadcrumbs">
@@ -61,7 +60,7 @@
                 </li>
               </ol>
             </div>
-          </section>
+          </header>
           <!-- Filter -->
           <section class="filter" data-test="filter">
             <h2 class="visually-hidden">Фильтры гостиниц Седоны</h2>
@@ -157,95 +156,125 @@
         <!-- Catalog -->
         <section class="catalog" data-test="catalog">
           <h2 class="visually-hidden">Предложения жилья в Седоне</h2>
-          <ul class="catalog-list">
-            <!-- Card 1 -->
-            <li class="catalog-item">
-              <a class="card-link" href="#">
-                <img class="card-image" src="images/catalog/catalog-1.jpg" width="300" height="212" alt="Звёздное небо в ращелине гор">
-                <h3 class="card-title">Amara Resort & Spa</h3>
-              </a>
-              <p class="card-specification">
-                <span class="card-type">Гостиница</span>
-                <b class="card-price">От 4000 ₽</b>
-              </p>
-              <a class="button button-more-info" href="card.html">Подробнее</a>
-              <button type="button" class="button batton-favorites">В избранное</button>
-              <p class="card-rating">Рейтинг 8,5</p>
-            </li>
-            <!-- Card 2 -->
-            <li class="catalog-item">
-              <a class="card-link" href="#">
-                <img class="card-image" src="images/catalog/catalog-2.jpg" width="300" height="212" alt="Радуга над горным хребтом">
-                <h3 class="card-title">Villas at Poco Diablo</h3>
-              </a>
-              <p class="card-specification">
-                <span class="card-type">Гостиница</span>
-                <b class="card-price">От 5000 ₽</b>
-              </p>
-              <a class="button button-more-info" href="#">Подробнее</a>
-              <button type="button" class="button batton-favorites">В избранное</button>
-              <p class="card-rating">Рейтинг 9,2</p>
-            </li>
-            <!-- Card 3 -->
-            <li class="catalog-item">
-              <a class="card-link" href="#">
-                <img class="ard-image" src="images/catalog/catalog-3.jpg" width="300" height="212" alt="Горы на фоне голубого неба">
-                <h3 class="card-title">Desert Quail Inn</h3>
-              </a>
-              <p class="card-specification">
-                <span class="card-type">Гостиница</span>
-                <b class="card-price">От 2500 ₽</b>
-              </p>
-              <a class="button button-more-info" href="#">Подробнее</a>
-              <button type="button" class="button batton-favorites">В избранное</button>
-              <p class="card-rating">Рейтинг 6,9</p>
-            </li>
-            <!-- Card 4 -->
-            <li class="catalog-item">
-              <a class="card-link" href="#">
-                <img class="card-image" src="images/catalog/catalog-4.jpg" width="300" height="212" alt="Гора на фоне звёздного неба">
-                <h3 class="card-title">GreenTree Inn</h3>
-              </a>
-              <p class="card-specification">
-                <span class="card-type">Гостиница</span>
-                <b class="card-price">От 1500 ₽</b>
-              </p>
-              <a class="button button-more-info" href="#">Подробнее</a>
-              <button class="button batton-favorites">В избранное</button>
-              <p class="card-rating">Рейтинг 5,0</p>
-            </li>
-          </ul>
+            <ul class="catalog-list">
+              <!-- Card 1 -->
+              <li class="catalog-item">
+                <a class="card-link" href="#">
+                  <img class="card-image" src="images/catalog/catalog-1.jpg" width="300" height="212" alt="Звёздное небо в ращелине гор">
+                  <h3 class="card-title">Amara Resort & Spa</h3>
+                </a>
+                <p class="card-specification">
+                  <span class="card-type">Гостиница</span>
+                  <b class="card-price">От 4000 ₽</b>
+                </p>
+                <p class="card-buttons">
+                  <a class="button button-more-info" href="card.html">Подробнее</a>
+                  <button type="button" class="button batton-favorites">В избранное</button>
+                </p>
+                <p class="card-rating">
+                  <span class="card-rating-stars">Звезды</span>
+                  <span class="card-rating-text">
+                  Рейтинг 5,0
+                  </span>
+                </p>
+              </li>
+              <!-- Card 2 -->
+              <li class="catalog-item">
+                <a class="card-link" href="#">
+                  <img class="card-image" src="images/catalog/catalog-2.jpg" width="300" height="212" alt="Радуга над горным хребтом">
+                  <h3 class="card-title">Villas at Poco Diablo</h3>
+                </a>
+                <p class="card-specification">
+                  <span class="card-type">Гостиница</span>
+                  <b class="card-price">От 5000 ₽</b>
+                </p>
+                <p class="card-buttons">
+                  <a class="button button-more-info" href="#">Подробнее</a>
+                  <button type="button" class="button batton-favorites">В избранном</button>
+                </p>
+                <p class="card-rating">
+                  <span class="card-rating-stars">Звезды</span>
+                  <span class="card-rating-text">
+                  Рейтинг 9,2
+                  </span>
+                </p>
+              </li>
+              <!-- Card 3 -->
+              <li class="catalog-item">
+                <a class="card-link" href="#">
+                  <img class="card-image" src="images/catalog/catalog-3.jpg" width="300" height="212" alt="Горы на фоне голубого неба">
+                  <h3 class="card-title">Desert Quail Inn</h3>
+                </a>
+                <p class="card-specification">
+                  <span class="card-type">Гостиница</span>
+                  <b class="card-price">От 2500 ₽</b>
+                </p>
+                <p class="card-buttons">
+                  <a class="button button-more-info" href="#">Подробнее</a>
+                  <button type="button" class="button batton-favorites">В избранное</button>
+                </p>
+                <p class="card-rating">
+                  <span class="card-rating-stars">Звезды</span>
+                  <span class="card-rating-text">
+                  Рейтинг 6,9
+                  </span>
+                </p>
+              </li>
+              <!-- Card 4 -->
+              <li class="catalog-item">
+                <a class="card-link" href="#">
+                  <img class="card-image" src="images/catalog/catalog-4.jpg" width="300" height="212" alt="Гора на фоне звёздного неба">
+                  <h3 class="card-title">GreenTree Inn</h3>
+                </a>
+                <p class="card-specification">
+                  <span class="card-type">Гостиница</span>
+                  <b class="card-price">От 1500 ₽</b>
+                </p>
+                <p class="card-buttons">
+                  <a class="button button-more-info" href="#">Подробнее</a>
+                  <button class="button batton-favorites">В избранное</button>
+                </p>
+                <p class="card-rating">
+                  <span class="card-rating-stars">Звезды</span>
+                  <span class="card-rating-text">
+                  Рейтинг 5,0
+                  </span>
+                </p>
+              </li>
+            </ul>
           <!-- Pagination -->
-          <ul class="pagination">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-link-current" >1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-                <span class="pagination-dots">...</span>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">10</a>
-            </li>
-          </ul>
+          <div class="pagination-container">
+            <ul class="pagination">
+              <li class="pagination-item">
+                <a class="pagination-link pagination-link-current">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                  <span class="pagination-dots">...</span>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">10</a>
+              </li>
+            </ul>
+          </div>
         </section>
-        <!-- Search -->
+        <!-- Subscription -->
         <section class="subscription" data-test="subscribe">
           <div class="subscription-container">
             <h2 class="subscription-title">Подпишитесь на рассылку</h2>
             <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label for="subscription-email">Email</label>
-              <input class="field" placeholder="Ваш e-mail" type="email" name="subscription-email" id="subscription-email" required>
-              <button class="button subscription-button" type="submit">Подписаться</button>
+              <label class="visually-hidden" for="subscription-email">Email</label>
+              <input class="field" type="email" name="subscription-email" id="subscription-email" placeholder="Ваш e-mail" required>
+              <button class="button button-subscription" type="submit">Подписаться</button>
             </form>
           </div>
         </section>
