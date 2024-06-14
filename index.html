@@ -29,12 +29,12 @@
           <!-- User-navigation -->
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link navigation-user-link-search" href="#">
+              <a class="navigation-link" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-user-link-favorite" href="#">
+              <a class="navigation-link" href="#">
                 <span class="visually-hidden">Избранное</span>
                 <span class="notification-badge">12</span>
               </a>
@@ -51,13 +51,13 @@
             <img class="hero-image" src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
         </section>
         <!-- Advantages -->
-        <section class="" data-test="advantages">
+        <section class="advantages" data-test="advantages">
           <div class="advantages-container">
             <h2 class="advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
             <p class="advantages-lead">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           </div>
           <ul class="advantages-list">
-            <li class="advantages-item advantages-item-wide">
+            <li class="advantages-item-wide">
               <div class="advantages-item-wide-container">
                 <h3 class="advantages-item-title">Настоящий городок</h3>
                 <p class="advantages-item-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
@@ -69,16 +69,16 @@
               <p class="advantages-item-text">Все достопримечательности находятся очень близко</p>
             </li>
             <li class="advantages-item advantages-item-accent">
-              <h3 class="advantages-item-title ">Красивая дорога</h3>
+              <h3 class="advantages-item-title ">Красивая<br> дорога</h3>
               <p class="advantages-item-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
             <li class="advantages-item">
-              <h3 class="advantages-item-title">Мало туристов</h3>
+              <h3 class="advantages-item-title">Мало<br> туристов</h3>
               <p class="advantages-item-text">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
-            <li class="advantages-item advantages-item-wide">
+            <li class="advantages-item-wide advantages-item-wide-reverse">
               <div class="advantages-item-wide-container">
-                <h3 class="advantages-item-title">Там есть мост дьявола</h3>
+                <h3 class="advantages-item-title">Там есть<br> мост дьявола</h3>
                 <p class="advantages-item-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
               <img class="advantages-item-image" src="images/advantages/advantages-2.jpg" width="800" height="385" alt="Каньон, горы, снова горы">
@@ -110,7 +110,7 @@
         <section class="search" data-test="search">
           <div class="search-container">
             <h2 class="search-title">Заинтересовались?</h2>
-            <p class="search-lead">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <p class="search-lead">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <button type="button" class="button button-search">Поиск гостиницы в Седоне</button>
           </div>
         </section>
@@ -120,7 +120,7 @@
             <h2 class="subscription-title">Подпишитесь на рассылку</h2>
             <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label for="subscription-email">Email</label>
+              <label class="visually-hidden" for="subscription-email">Email</label>
               <input class="field" type="email" name="subscription-email" id="subscription-email" placeholder="Ваш e-mail" required>
               <button class="button button-subscription" type="submit">Подписаться</button>
             </form>
