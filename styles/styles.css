@@ -58,6 +58,7 @@ body {
 }
 
 .button {
+  display: inline-block;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -69,6 +70,7 @@ body {
   font-weight: 700;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 /* Pages */
@@ -103,6 +105,7 @@ body {
 }
 
 .navigation-link {
+  position: relative;
   display: block;
   padding: 20px 16px;
   font-size: 20px;
@@ -125,8 +128,21 @@ body {
   min-height: 64px;
 }
 
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  fill: #000000;
+}
+
 .notification-badge {
+  position: absolute;
   width: 20px;
+  top: 11px;
+  right: 4px;
   display: flex;
   justify-content: center;
   padding: 5px;
@@ -158,7 +174,7 @@ body {
   background-repeat:no-repeat;
   background-size: 100% auto, cover;
   background-position: center bottom, center;
-  background-color: #756157;
+  background-color: #f2f2f2;
   padding-top: 51px;
   padding-bottom: 82px;
 }
@@ -396,9 +412,12 @@ body {
   display: flex;
 }
 
-.field {
+.subscription input[type="email"] {
   width: 452px;
   border: none;
+  padding: 14px 20px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .subscription input::placeholder {
@@ -439,6 +458,11 @@ body {
 
 .footer-social-item {
   width: 47px;
+  height: 40px;
+}
+
+.footer-social-link {
+  display: block;
   height: 40px;
 }
 
@@ -642,20 +666,19 @@ body {
 .card-buttons {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 0;
   margin-bottom: 16px;
 }
 
 .button-more-info {
   width: 140px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 8px 28px;
+  padding: 8px 26px;
 }
 
 .batton-favorites {
   width: 140px;
+  text-align: center;
   padding-top: 8px;
   padding-bottom: 8px;
   background-color: #82b3d3;
@@ -728,4 +751,23 @@ body {
 
 .pagination-dots {
   padding: 17px 22px;
+}
+
+/* Catalog subscription */
+
+.main-inner .subscription {
+  background-image: none;
+  background-color: #ffffff;
+}
+
+.main-inner .subscription-title {
+  color: #000000;
+}
+
+.main-inner .subscription-text {
+  color: #333333;
+}
+
+.main-inner .subscription input {
+  background-color: #f2f2f2;
 }
