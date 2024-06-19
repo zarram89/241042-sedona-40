@@ -148,10 +148,19 @@ body {
 
 .navigation-link:focus-visible {
   color: #756157;
+  outline: none;
 }
 
 .navigation-link:active {
   color: hsla(20, 15%, 40%, 0.3);
+}
+
+.navigation-link-current,
+.navigation-link-current:hover,
+.navigation-link-current:focus-visible,
+.navigation-link-current:active {
+  color: #000000;
+  cursor: default;
 }
 
 .navigation-link-current::before {
@@ -166,7 +175,7 @@ body {
 
 .navigation-user {
   justify-content: flex-end;
-  width: 150px;
+  max-width: 150px;
   margin-left: auto;
   margin-right: 20px;
 }
@@ -176,7 +185,7 @@ body {
   min-height: 64px;
 }
 
-.navigation-link .navigation-icon {
+.navigation-icon {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -554,6 +563,7 @@ body {
 
 .button-subscription:focus-visible {
   background-color: #68a2ca;
+  outline: none;
 }
 
 .button-subscription:active {
@@ -586,21 +596,14 @@ body {
 }
 
 .footer-social-item {
-  width: 47px;
-  height: 40px;
   margin: 0;
 }
 
 .footer-social-link {
   position: relative;
   display: block;
-  padding: 20px 16px;
-  font-size: 20px;
-  line-height: 24px;
-  color: #000000;
-  background-color: #ffffff;
-  font-weight: 700;
-  text-decoration: none;
+  width: 47px;
+  height: 40px;
 }
 
 .footer-social-icon {
@@ -725,8 +728,8 @@ body {
   background-repeat: no-repeat;
 }
 
-.breadcrumbs-item:last-child .breadcrumbs-item::after {
-  content: none
+.breadcrumbs-item:last-child.breadcrumbs-item::after {
+  content: none;
 }
 
 .breadcrumbs-icon {
@@ -1049,11 +1052,11 @@ body {
 
 .pagination-link-current,
 .pagination-link-current:hover,
-.pagination-link-current:active,
-.pagination-link-current:focus {
-  color: #000000;
+.pagination-link-current:focus-visible,
+.pagination-link-current:active {color: #000000;
   background-color: #f2f2f2;
   cursor: default;
+  outline: none;
 }
 
 .pagination-dots {
