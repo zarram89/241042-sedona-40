@@ -71,48 +71,54 @@
           <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
             <!-- Filter-infrastructer -->
             <fieldset class="filter-group filter-group-infrastructure">
-              <legend class="filter-title">Инфраструктура</legend>
+              <legend class="filter-title">Инфраструктура:</legend>
               <ul class="filter-list">
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="pool" checked>
-                    Бассейн
+                    <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Бассейн</span>
                   </label>
                 </li>
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="parking" checked>
-                    Парковка
+                    <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Парковка</span>
                   </label>
                 </li>
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="wifi">
-                    Wi-Fi
+                    <input class="visually-hidden control-input" type="checkbox" name="wifi">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Wi-Fi</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
             <!-- Filter-type -->
             <fieldset class="filter-group filter-group-type">
-              <legend class="filter-title">Тип жилья</legend>
+              <legend class="filter-title">Тип жилья:</legend>
               <ul class="filter-list">
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="type" value="hotel" checked>
-                    Гостиница
+                    <input class="visually-hidden  control-input" type="radio" name="type" value="hotel" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Гостиница</span>
                   </label>
                 </li>
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="type" value="motel">
-                    Мотель
+                    <input class="visually-hidden control-input" type="radio" name="type" value="motel">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Мотель</span>
                   </label>
                 </li>
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="type" value="apartment">
-                    Апартаменты
+                    <input class="visually-hidden control-input" type="radio" name="type" value="apartment">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Апартаменты</span>
                   </label>
                 </li>
               </ul>
@@ -120,10 +126,27 @@
             <!-- Filter-price -->
             <fieldset class="filter-group filter-group-price">
               <legend class="filter-title">Стоимость, ₽:</legend>
-              <input class="control-input-number-min" type="number" id="control-input-number-min" placeholder="0"><label
-                class="control-label-number" for="control-input-number-min">от</label>
-              <input class="control-input-number-max" type="number" id="сontrol-input-number-max"
-                placeholder="9000"><label class="control-label-number" for="сontrol-input-number-max">до</label>
+              <!-- Price inputs -->
+              <div class="range-wrapper-inputs">
+                <div class="range-wrapper-input">
+                  <input class="range-input range-input-min" type="number" value="0" name="min-price" id="min-price">
+                  <label class="catalog-filter-label" for="min-price"> от</label>
+                  </label>
+                </div>
+                <div class="range-wrapper-input">
+                  <input class="range-input range-input-max" type="number" value="9000" name="max-price" id="max-price">
+                  <label class="catalog-filter-label" for="max-price"> до</label>
+                </div>
+              </div>
+              <!-- Price togglers -->
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0; width: 226px">
+                    <button class="range-toggle toggle-min"><span  class="visually-hidden">Изменить миинимальцую цену</span></button>
+                    <button class="range-toggle toggle-max"><span class="visually-hidden">Изменить максимальную цену</span></button>
+                  </div>
+                </div>
+              </div>
             </fieldset>
 
             <!-- Filters buttons -->
