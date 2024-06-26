@@ -1347,6 +1347,10 @@ body {
   background-color: hsla(0, 0%, 95%, 0.8);
 }
 
+.modal-container-close {
+  /* display: none; */
+}
+
 .modal {
   position: relative;
   margin: auto;
@@ -1385,4 +1389,57 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+}
+
+.search-form .field-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 48px;
+}
+
+.search-form .search-form-label {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.search-form .field-date {
+  width: 440px;
+  padding: 12px 20px;
+  padding-right: 50px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  background-image: url(/images/date.svg);
+  background-repeat: no-repeat;
+  background-position: center right 22px;
+}
+
+.search-form .field-date::placeholder {
+  opacity: 60%;
+}
+
+.search-form-button {
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  background-color: #83b3d3;
+}
+
+.search-form-button:hover {
+  background-color: #68a2ca;
+}
+
+.search-form-button:focus-visible {
+  background-color: #68a2ca;
+}
+
+.search-form-button:active {
+  background-color: #68a2ca;
 }
