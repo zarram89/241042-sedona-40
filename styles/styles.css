@@ -1011,6 +1011,7 @@ body {
 .button-reset:focus-visible {
   outline: 2px solid #68a2ca;
   outline-offset: -2px;
+  background-color: transparent;
 }
 
 .button-reset:active {
@@ -1048,8 +1049,9 @@ body {
   padding: 14px 20px;
   padding-right: 50px;
   font: inherit;
-  background-color: #ffffff;
   border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  background-color: #ffffff;
   background-image: url("/images/arrow-bottom.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
@@ -1075,7 +1077,6 @@ body {
   color: hsla(0, 0%, 0%, 0.3);
   border: hsla(0, 0%, 0%, 0.3);
 }
-
 
 .sort-buttons {
   display: flex;
@@ -1364,9 +1365,9 @@ body {
   width: 717px;
 }
 
+/* Modal close button */
 .modal-close-button {
   position: absolute;
-  padding: 0;
   top: 64px;
   right: 52px;
   width: 52px;
@@ -1375,37 +1376,59 @@ body {
   background-color: #f2f2f2;
   border: none;
   border-radius: 50%;
-  background-image: url("/images/close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
+}
+
+.modal-close-button:hover {
+  background-color: #e6e6e6;
+}
+.modal-close-button:focus-visible {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
+.modal-close-button:active svg {
+  fill: hsla(0, 0%, 0%, 0.3);
+}
+
+.modal-close-button:active {
+  background-color: #e6e6e6;
 }
 
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
   font-size: 30px;
-  font-weight: 700;
   line-height: 36px;
+  font-weight: 700;
   text-transform: uppercase;
   color: #000000;
 }
 
+.search-form {
+  display: grid;
+  grid-template-columns: 247px 242px;
+  gap: 23px 88px;
+}
+
 .search-form .field-group {
-  display: flex;
-  justify-content: space-between;
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 440px;
   align-items: center;
+  row-gap: 4px;
   margin: 0;
-  margin-bottom: 48px;
 }
 
 .search-form .search-form-label {
   font-size: 20px;
-  font-weight: 700;
   line-height: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
 }
 
 .search-form .field-date {
+  position: relative;
   width: 440px;
   padding: 12px 20px;
   padding-right: 50px;
@@ -1416,17 +1439,50 @@ body {
   border: none;
   border-radius: 4px;
   background-color: #f2f2f2;
-  background-image: url(/images/date.svg);
+  background-image: url("/images/date.svg ");
   background-repeat: no-repeat;
   background-position: center right 22px;
 }
 
+/* .field-date::after {
+  position: absolute;
+  content: "";
+  background: url("/images/date.svg");
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+} */
+
 .search-form .field-date::placeholder {
-  opacity: 60%;
+  opacity: 0.6;
+}
+
+.search-form .field-date:hover {
+  background-color: #e6e6e6;
+}
+
+.search-form .field-date:focus-visible {
+  outline: 3px solid #83b3d3;
+  background-color: #e6e6e6;
+}
+
+.modal-field-message {
+  font-size: 16px;
+  line-height: 21px;
+  padding: 0 20px;
+  grid-column: 2/3;
+}
+
+.modal-field-message-error {
+  color: #ff5757;
 }
 
 .search-form-button {
-  width: 100%;
+  grid-column: 1/-1;
   padding-top: 18px;
   padding-bottom: 18px;
   background-color: #83b3d3;
