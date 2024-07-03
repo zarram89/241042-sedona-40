@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог гостиниц Седоны</title>
-    <link rel="icon" href="favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -180,7 +180,7 @@
           <div class="select sorting-type">
             <select class="select-control" aria-label="Сортировка">
               <option value="popular">Сначала популярные</option>
-              <option value="cheap">Сначала дешёвые</option>
+              <option value="cheap" selected>Сначала дешевые</option>
               <option value="expensive">Сначала дорогие</option>
             </select>
           </div>
@@ -229,12 +229,17 @@
                 <a class="button button-more-info" href="card.html">Подробнее</a>
                 <button type="button" class="button batton-favorites">В избранное</button>
               </p>
-              <p class="card-rating">
-                <span class="card-rating-stars">Звезды</span>
+              <span class="card-rating">
+                <ul class="card-rating-list">
+                  <li class="card-rating-item"></li>
+                  <li class="card-rating-item"></li>
+                  <li class="card-rating-item"></li>
+                  <li class="card-rating-item"></li>
+                </ul>
                 <span class="card-rating-text">
-                  Рейтинг 5,0
+                  Рейтинг: 8,5
                 </span>
-              </p>
+              </span>
             </li>
             <!-- Card 2 -->
             <li class="catalog-item">
@@ -251,12 +256,17 @@
                 <a class="button button-more-info" href="#">Подробнее</a>
                 <button type="button" class="button batton-favorites batton-favorites-checked">В избранном</button>
               </p>
-              <p class="card-rating">
-                <span class="card-rating-stars">Звезды</span>
+              <span class="card-rating">
+                <ul class="card-rating-list">
+                  <li class="card-rating-item"></li>
+                  <li class="card-rating-item"></li>
+                  <li class="card-rating-item"></li>
+                  <li class="card-rating-item"></li>
+                </ul>
                 <span class="card-rating-text">
-                  Рейтинг 9,2
+                  Рейтинг: 9,2
                 </span>
-              </p>
+              </span>
             </li>
             <!-- Card 3 -->
             <li class="catalog-item">
@@ -273,12 +283,16 @@
                 <a class="button button-more-info" href="#">Подробнее</a>
                 <button type="button" class="button batton-favorites">В избранное</button>
               </p>
-              <p class="card-rating">
-                <span class="card-rating-stars">Звезды</span>
+              <span class="card-rating">
+                <ul class="card-rating-list">
+                  <li class="card-rating-item"></li>
+                  <li class="card-rating-item"></li>
+                  <li class="card-rating-item"></li>
+                </ul>
                 <span class="card-rating-text">
-                  Рейтинг 6,9
+                  Рейтинг: 6,9
                 </span>
-              </p>
+              </span>
             </li>
             <!-- Card 4 -->
             <li class="catalog-item">
@@ -295,12 +309,15 @@
                 <a class="button button-more-info" href="#">Подробнее</a>
                 <button class="button batton-favorites">В избранное</button>
               </p>
-              <p class="card-rating">
-                <span class="card-rating-stars">Звезды</span>
+              <span class="card-rating">
+                <ul class="card-rating-list">
+                  <li class="card-rating-item"></li>
+                  <li class="card-rating-item"></li>
+                </ul>
                 <span class="card-rating-text">
-                  Рейтинг 5,0
+                  Рейтинг: 5,0
                 </span>
-              </p>
+              </span>
             </li>
           </ul>
           <!-- Pagination -->
@@ -318,7 +335,7 @@
               <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <span class="pagination-dots">...</span>
+              <span class="pagination-link pagination-dots">...</span>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">10</a>
