@@ -88,6 +88,7 @@ img {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+  word-break: break-all;
 
   background-color: #756157;
   border: none;
@@ -625,6 +626,7 @@ img {
 
 .subscription-field {
   width: 452px;
+  height: 100%;
   padding: 14px 20px;
 
   font-family: inherit;
@@ -640,10 +642,6 @@ img {
 }
 
 .subscription-field::placeholder {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
-
   color: #000000;
   opacity: 0.6;
 }
@@ -992,6 +990,10 @@ img {
 }
 
 /* Price range */
+.range:not(:last-child) {
+  margin-bottom: 44px;
+}
+
 .range-scale {
   position: relative;
 
