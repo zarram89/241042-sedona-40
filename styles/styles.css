@@ -1128,6 +1128,12 @@ img {
   border-radius: 50%;
 }
 
+.control-input:disabled ~ .control-mark,
+.control-input:disabled ~ .control-label {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
 .filter-buttons {
   width: 191px;
   margin-left: auto;
