@@ -503,7 +503,7 @@ img {
   height: 72px;
   margin-left: -38px;
 
-  background-image: url("/images/house.svg");
+  background-image: url("../images/house.svg");
   background-repeat: no-repeat;
 }
 
@@ -514,7 +514,7 @@ img {
   height: 70px;
   margin-left: -37px;
 
-  background-image: url("/images/food.svg");
+  background-image: url("../images/food.svg");
   background-repeat: no-repeat;
 }
 
@@ -525,7 +525,7 @@ img {
   height: 76px;
   margin-left: -32px;
 
-  background-image: url("/images/gift.svg");
+  background-image: url("../images/gift.svg");
   background-repeat: no-repeat;
 }
 
@@ -848,7 +848,7 @@ img {
   bottom: 5px;
   right: -18px;
 
-  background-image: url("/images/arrow-right.svg");
+  background-image: url("../images/arrow-right.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1108,7 +1108,7 @@ img {
   width: 13px;
   height: 10px;
 
-  background: url("/images/check.svg");
+  background: url("../images/check.svg");
 }
 
 /* Radio */
@@ -1242,7 +1242,7 @@ img {
   padding-right: 50px;
   font: inherit;
 
-  background-image: url("/images/arrow-bottom.svg");
+  background-image: url("../images/arrow-bottom.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
   background-color: #ffffff;
@@ -1495,7 +1495,7 @@ img {
   width: 18px;
   height: 18px;
 
-  background-image: url("/images/star.svg");
+  background-image: url("../images/star.svg");
 }
 
 .card-rating-text {
@@ -1724,7 +1724,7 @@ img {
 .search-form .input-date {
   padding-right: 50px;
 
-  background-image: url("/images/date.svg ");
+  background-image: url("../images/date.svg ");
   background-repeat: no-repeat;
   background-position: center right 22px;
 }
