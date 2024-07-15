@@ -94,6 +94,10 @@ img {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .button:hover,
@@ -140,6 +144,8 @@ img {
   height: 68px;
   margin-right: 30px;
   margin-bottom: -6px;
+
+  transition: opacity 0.3s ease;
 }
 
 .page-header-logo {
@@ -183,6 +189,8 @@ img {
   color: #000000;
 
   background-color: #ffffff;
+
+  transition: color 0.3s ease;
 }
 
 .navigation-link:hover {
@@ -241,6 +249,8 @@ img {
   margin: auto;
 
   fill: #000000;
+
+  transition: fill 0.3s ease;
 }
 
 .navigation-link:hover .navigation-icon {
@@ -729,6 +739,8 @@ img {
   margin: auto;
 
   fill: #83b3d3;
+
+  transition: fill 0.3s ease;
 }
 
 .footer-social-link:hover svg {
@@ -753,6 +765,7 @@ img {
   color: #000000;
   text-decoration: none;
 
+  transition: color 0.3s ease;
 }
 
 .footer-phone:hover {
@@ -773,6 +786,8 @@ img {
 
 .footer-htmlacademy-link svg {
   fill: #000000;
+
+  transition: fill 0.3s ease;
 }
 
 .footer-htmlacademy-link:hover svg{
@@ -1080,6 +1095,8 @@ img {
   font-size: 18px;
   line-height: 23px;
   word-break: break-all;
+
+  transition: opacity 0.3s ease;
 }
 
 .control:hover .control-mark,
@@ -1346,6 +1363,17 @@ img {
 
   border: 1px solid #e6e6e6;
   border-radius: 4px;
+
+  transition: box-shadow 0.3s ease;
+}
+
+.catalog-item:hover {
+  box-shadow: 0 0 15px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+.catalog-item:has(.card-link:focus-visible),
+.catalog-item:has(.button:focus-visible)  {
+  box-shadow: 0 0 15px 0 hsla(0, 0%, 0%, 0.2);
 }
 
 .card-link {
@@ -1555,6 +1583,10 @@ img {
 
   background-color: #82b3d3;
   border-radius: 4px;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .pagination-link:hover {
